@@ -24,9 +24,10 @@ foreach ($request_json['events'] as $event)
 				
 				$result = file_get_contents('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all');   // Get request content
 
-				$result_json = json_decode($result, true);   // Decode JSON request
+				$result_json = json_decode($result, false);   // Decode JSON request
 				
-				$reply_message = $result_json["new_death"];
+				// ตาย 57 คน.
+				$reply_message = "ตาย " . $result_json["new_death"] . " คน.";
 				
 			}
 			
