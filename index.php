@@ -1,4 +1,4 @@
 <?php
-    echo "LINEBOT by";
-    echo "Mr.KANT CHAROENJIT";
+    echo "<br>LINEBOT by";
+    echo "<br>Mr.KANT CHAROENJIT";
 ?>
